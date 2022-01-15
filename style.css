@@ -193,10 +193,12 @@ h3{
         text-align: center;
       }
       /* .............................................responsive css ...........................*/
- @media only screen and (max-width:688px){
-.container{
-width: 100%;
-}
-.All-collection{
-    flex-wrap: wrap;
-}
+      @media only screen and (max-width:688px){
+        .container{
+            width: 100%;
+        }
+        .All-collection, .banner, .contact {
+            grid-template-columns: repeat(1, 1fr);
+            flex-direction: column;
+        }
+        }
